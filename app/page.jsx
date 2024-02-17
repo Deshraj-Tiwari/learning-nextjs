@@ -2,9 +2,12 @@
 // ! Import from next/navigation. Not next/router
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { Orbitron } from "next/font/google";
 
 import Image from "next/image";
 import myImage from "../public/image.jpg";
+
+const orbitron = Orbitron({ subsets: ["latin"], weight: "700" });
 
 export default function Home() {
   const router = useRouter();
@@ -51,6 +54,10 @@ export default function Home() {
         width={200}
         height={200}
       />
+      <br />
+      <span className={orbitron.className}>This is an Orbitron font text</span>
+      <br />
+      <span>This is a normal text</span>
     </section>
   );
   // ? You also have another desktop opened for CBSE STUFF. Check it out as well
