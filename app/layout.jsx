@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
-        <footer className="bg-slate-900 text-white container mx-auto p-3 sticky mt-20 bottom-0 text-center border-4 border-green-600">
+        <footer className="bg-slate-900 text-white container mx-auto p-3 mt-20 text-center border-4 border-green-600">
           Copyright 2024 Deshraj Tiwari
         </footer>
       </body>

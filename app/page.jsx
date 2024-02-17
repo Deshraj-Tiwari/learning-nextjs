@@ -44,7 +44,8 @@ export default function Home() {
         className="inline"
         src={myImage}
         alt="Image of teamwork"
-        style={{ width: "25rem", height: "auto" }}
+        width={500}
+        height={200}
       />
       {/* //- To use an image with the help of an external link, you have to provide the domain of the image provider in the nex.config.mjs file by creating an images object and then providing an array as value for they key of domains, which should be including the domain of the provider. */}
       <Image
@@ -52,7 +53,7 @@ export default function Home() {
         src="https://images.unsplash.com/photo-1707762745645-45bf0b25eb7d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Image of lighthouse"
         width={200}
-        height={200}
+        height={400}
       />
       <br />
       <span className={orbitron.className}>This is an Orbitron font text</span>
