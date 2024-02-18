@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <section>
-      <span className="text-red-600 text-5xl font-bold">Home</span>
+      <span className="text-red-600 text-5xl font-bold">Home Page</span>
       <hr className="my-8" />
       <span className="text-red-600 text-5xl font-bold">useRouter</span>
       <br />
