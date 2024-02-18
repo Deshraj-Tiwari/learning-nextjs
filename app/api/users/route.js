@@ -1,13 +1,18 @@
-import { NextResponse } from "next/server"
+import { NextResponse } from "next/server";
 
 export async function POST(req, res) {
-    let {email, password, } = await req.json()
-    console.log({email: email, password: password})
-
-    if (!email || !password) {
-        return NextResponse.json({message: "Email and password are required"}, {status: 400})
-    } else{
-        return NextResponse.json({message: "Data fetched successfully"})
-    }
-
+  let { username, email, password } = await req.json();
+  if (!email || !password || !username) {
+    console.log({ username: username, email: email, password: password });
+    return NextResponse.json(
+      { message: "All fields not provided", ok: false },
+      { status: 400 }
+    );
+  } else {
+    console.log({ username: username, email: email, password: password });
+    return NextResponse.json(
+      { message: "Data fetched successfully", ok: true },
+      { status: 201 }
+    );
+  }
 }
